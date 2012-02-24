@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.5.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>File_MARC</name>
+ <channel>pear.php.net</channel>
+ <summary>Parse, modify, and create MARC records</summary>
+ <description>The standard for machine-readable cataloging (MARC) records
+ is documented at http://loc.gov/marc/. This package enables you to read
+ existing MARC records from a file, string, or (using the YAZ extension), from
+ a Z39.50 source. You can also use this package to create new MARC records.
+
+ This package is based on the PHP MARC package, originally called
+ &quot;php-marc&quot;, that is part of the Emilda Project (http://www.emilda.org). 
+ Christoffer Landtman generously agreed to make the &quot;php-marc&quot; code available
+ under the GNU LGPL so it could be used as the basis of this PEAR package.</description>
+ <lead>
+  <name>Dan Scott</name>
+  <user>dbs</user>
+  <email>dbs@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-02-24</date>
+ <time>23:41:30</time>
+ <version>
+  <release>0.1.2</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License</license>
+ <notes>0.1.2-alpha
+* Correct warnings raised by Zend Code Analyzer (thanks to Christophe Gesche&apos;s codecheck script)</notes>
+ <contents>
+  <dir baseinstalldir="File" name="/">
+   <file baseinstalldir="File" md5sum="84b93a74fa1592842dd89b1607261b4a" name="MARC/Control_Field.php" role="php" />
+   <file baseinstalldir="File" md5sum="750ee56ec9853a41cc8d093e110994c5" name="MARC/Data_Field.php" role="php" />
+   <file baseinstalldir="File" md5sum="42c8c1088897b62940acc01cbeae1efe" name="MARC/Exception.php" role="php" />
+   <file baseinstalldir="File" md5sum="22cd95c13e1598cf898480220ba82d04" name="MARC/Field.php" role="php" />
+   <file baseinstalldir="File" md5sum="86424d8868e99b7452c9c6855702cf79" name="MARC/List.php" role="php" />
+   <file baseinstalldir="File" md5sum="63ca8122f74d9e4169a70749851428b6" name="MARC/Record.php" role="php" />
+   <file baseinstalldir="File" md5sum="4b421990266852bd9b7e7a2aa2c91a86" name="MARC/Subfield.php" role="php" />
+   <file baseinstalldir="File" md5sum="6af971fd9ff5ef3e5fcba8a64a0e7a49" name="examples/example.mrc" role="doc" />
+   <file baseinstalldir="File" md5sum="ea4abff91135a87ed40c10a3d6fb60e7" name="examples/marc_yaz.php" role="doc" />
+   <file baseinstalldir="File" md5sum="542df3337b18e2c947ac6d16ec16cb02" name="examples/read.php" role="doc" />
+   <file baseinstalldir="File" md5sum="24c4f473ea31e6a5da9c178136a03011" name="examples/subfields.php" role="doc" />
+   <file baseinstalldir="File" md5sum="6af971fd9ff5ef3e5fcba8a64a0e7a49" name="tests/example.mrc" role="test" />
+   <file baseinstalldir="File" md5sum="2b11932ecf39c53efea80583c9a5282a" name="tests/marc_001.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="df9cbd72dfd3ff3bb2af66250cca3a3e" name="tests/marc_002.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="ca30f570014f588783ad5c14c16e6464" name="tests/marc_003.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="3f9131dbcf52e21df9b036cd2747dbeb" name="tests/marc_004.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="377213b9e3b9145f5040016942581270" name="tests/marc_005.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="44765ee9839369eb614610985874ed59" name="tests/marc_006.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="9cec3b875ffa0bc4cfe9d449bb1ae598" name="tests/marc_007.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="0ca24425cfc4731ce72e89dca56a5dbc" name="tests/marc_008.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="07dd4019fa9db98addc63debbdad3430" name="tests/marc_010.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="68f55937400fba831ead976f5d2ae792" name="tests/marc_field_001.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="0fb6075ad5c744638f5d5eb7f77d4f80" name="tests/marc_field_002.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="f566ad04352086ba170b95e265232f84" name="tests/marc_field_003.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="f075e71a4f2712626e06efe027c4666e" name="tests/marc_field_004.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="18fa6c4064f6210071c60b2345a9956b" name="tests/marc_subfield_001.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="2082723fea909e73980ee4f7d784732b" name="tests/marc_subfield_002.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="84eb9bdd3699b874e50de1a47f9f44eb" name="tests/marc_xml_001.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="43cfa2fcc33f9c6f24c6d05730b385e2" name="tests/marc_xml_002.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="f47191b8181ab00af46f7e85c8cbde9a" name="tests/marc_xml_003.phpt" role="test" />
+   <file baseinstalldir="File" md5sum="a0166a4ff0bc0bb283e854f11beaa793" name="tests/music.mrc" role="test" />
+   <file baseinstalldir="File" md5sum="4f43fec7b276267eec5258044853ccc8" name="tests/sandburg.mrc" role="test" />
+   <file baseinstalldir="File" md5sum="e216b95f905dd240c9bde372950e4073" name="tests/sandburg.xml" role="test" />
+   <file baseinstalldir="File" md5sum="c065064d4f4df8b5b2873f28838daa67" name="CHANGELOG" role="doc" />
+   <file baseinstalldir="File" md5sum="781319fef6c1d1341ba1ecf797f906b5" name="MARC.php" role="php" />
+   <file baseinstalldir="File" md5sum="71d2084b8e6c9e882719ac99ff2c64b1" name="MARCXML.php" role="php" />
+   <file baseinstalldir="File" md5sum="fbc093901857fcd118f065f900982c24" name="LICENSE" role="doc" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Structures_LinkedList</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>

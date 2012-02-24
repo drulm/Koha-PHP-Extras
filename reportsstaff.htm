@@ -1,0 +1,92 @@
+<!--
+## Just a menu of tools
+
+## Copyright 2008 Darrell Ulm
+
+## This file is part of koha-extras.
+
+## koha-extras is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 2 of the License, or
+## (at your option) any later version.
+
+## koha-extras is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+
+## You should have received a copy of the GNU General Public License
+## along with koha-extras; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+
+
+
+
+
+<h3 align="center">Koha Extras Reports <em>(SMFPL Reports)</em></h3>
+<table border="1" align="center">
+  <tr>
+    <td width="154"><div align="center"><em><strong><img src="http://opac.smfpl.org/opac-tmpl/prog/famfamfam/silk/book.png">Circulation</strong></em></div></td>
+    <td width="133"><div align="center"><em><strong><img src="http://opac.smfpl.org/opac-tmpl/prog/famfamfam/silk/book.png">Reference</strong></em></div></td>
+    <td width="125"><div align="center"><em><strong><img src="http://opac.smfpl.org/opac-tmpl/prog/famfamfam/silk/book.png">Cataloging</strong></em></div></td>
+    <td width="175"><div align="center"><em><strong><img src="http://opac.smfpl.org/opac-tmpl/prog/famfamfam/silk/book.png">All</strong></em></div></td>
+  </tr>
+  <tr>
+    <td><p><a href="http://192.168.1.117/kohaextras3/cancelres.php">Canceled Reserves </a></p>
+      <p><a href="http://192.168.1.117/kohaextras3/circ_stats.php">Circulation Statistics </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/illsubmit.php">Submit ILL </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/patronfind.php">Find Patron By Code </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/processreserveshort.php">Daily Reserve Pull List</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/inhousesubmit.php">In House Count Enter</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/phonelist.php">Phone Call List</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/StowOverdues.php">Over Dues</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/StowBill.php">Bills</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/StowUnique.php">Unique Management</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/StowEmailHold.php">Email Hold Notices </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/finesfix.php"><strong>Patron Bill MaxFines </strong></a></p></td>
+    <td><p><a href="http://192.168.1.117/kohaextras3/holdsalert.php">Hold Alert List </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/illsearch.php">ILL Search</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/koha_status.php">Status Searches </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/patronlookuprun.php">Patron Lab Verify</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/shelf_list.php">Shelf List Reports</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/holdoverlist.php">Held Over List</a></p></td>
+    <td><p><a href="http://192.168.1.117/kohaextras3/acqfix.php">Acqui. Fix Report </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/acqrepdate.php">Acqui Budget</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/acqreportoff.php">Acqui Price Fix </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/cat_stats.php">Cataloging Stats </a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/orderbarcode.php">Order Barcode</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/spinesearch.php">Print Spine Lbl</a></p>
+    <p><a href="http://192.168.1.117/kohaextras3/cdreport.php">CD Call Report </a></p></td>
+    <td><div align="right"><a href="http://192.168.1.117/kohaextras3/kohabib.php"><strong>Cataloger's Search (if regular search fails)</strong></a></div>
+      <form action="http://192.168.1.117/kohaextras3/kohabib.php" method="POST" name="myform">
+        <p align="right">Title:
+		  <input name="title" type="text" id="title" size="20" />
+<br />
+        Author:
+          <input name="author" type="text" id="author" size="20" />	  
+<br />
+		ISBN:
+          <input name="isbn" type="text" id="isbn" size="20" />
+<br />
+		Series:
+          <input name="series" type="text" id="series" size="20" />
+<br />
+		Images:
+          <input name="images" type="checkbox" id="images" value="1" checked />
+		  <input type="submit" value="Submit Bib Search" />
+      </form>
+      </p>
+      <p>&nbsp;</p>
+      <form action="http://192.168.1.117/kohaextras3/kohabarcode.php" method="POST" name="myform">
+		<div align="right">
+		  <p align="right"><a href="http://192.168.1.117/kohaextras3/kohabarcode.php"><strong>Partial Barcode:</strong></a>		      <input name="barcode" type="text" id="barcode" size="20" />
+            <input type="submit" value="Go" />
+		  </p>
+	    </div>
+      </form>
+      <p>&nbsp;</p>
+      <p align="center"><a href="https://sites.google.com/a/liblime.com/koha-manual/Home/Table-of-Contents"><em><strong>Official Koha Documentation</strong></em></a></p></td>
+  </tr>
+</table>
+

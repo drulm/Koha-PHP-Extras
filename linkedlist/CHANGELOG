@@ -1,0 +1,27 @@
+0.0.8
+* Add destructors to avoid holding onto way too much memory
+
+0.0.7
+* Correct examples
+* Convert to PEAR_Exception for error handling
+
+0.0.6
+
+0.0.5
+* Create a singly linked list (Structures_LinkedList_Single)
+* Refactor Structures_LinkedList_Double to extend _Single
+
+0.0.4
+* Move most globals into class constants
+
+0.0.3
+* Separate addNode method into insertNode, appendNode, prependNode
+* Prevent current node from becoming invalid when adding a new node
+* Type hinting and avoiding moving current pointer with addNode()
+
+0.0.2
+* Implement basic error-handling using PEAR_ErrorStack
+* Adjust "link" terminology and API to "node"
+
+0.0.1
+* First attempt at a separate package for Structures_Linked_List
