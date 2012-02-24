@@ -1,0 +1,61 @@
+Koha Extras - Beta
+
+These add ons will require some knowlege of apache/php installation and some minor PHP programming skills for custimization. 
+
+KohaExtras is a test bed written in PHP for various ideas for Koha. Also we run many of these 
+tools and untilities at Stow Public Library in Stow, Ohio, USA. 
+
+Please send comments as needed to:
+
+darrell ulm At smfpl DoT org
+
+Kudos to Kyle Hall at:
+http://kylehall.info/
+http://kylehall.info/index.php/projects/
+for his KohaTools. We dervied the code that produces PDF notices from his
+overdue notice code. Check out all his projects! They rock and could be 
+useful to you!
+
+Kudos also to DtTvB for his authorship of his awsome date selector!
+http://dttvb.yi.org/
+
+It is *very* important you follow all instructions carefully 
+
+1. Install apache with PHP and also optionally install MySQL (XAMPP is easy)
+  * If the optional MySQL database is installed then upload kohaextras.sql into the database manually
+  * Copy the kohatools directory to your web server folder (htdocs in XAMPP)
+
+1.1. Install these PHP-Pear Modules the proper way for your distribution.
+	a)	Pear-DB
+	b)	Pear-Marc
+	c)	Pear-Linked-List
+
+2. go to file addrkoha.php, change ALL parameters as needed 
+  * 
+
+2.5 Did you do #2? 
+
+3. navigate to http://127.0.0.1/kohaextras/reports.htm to test the install
+   or navigate to http://yourserverip/kohaextras/reports.htm
+
+4. Make a link in Koha to http://127.0.0.1/kohaextras/reports.htm. Kohaextras links
+   back into Koha easily since Koha is web based which allows flexibility. 
+
+5. if it doesn't work, check all steps again!
+
+Optional but a good idea:
+You probably want to setup an .htaccess somewhere in the kohaextras directory so you have some 
+security for authorized uses. 
+
+Future of Koha Extras:
+* Improve the security.
+* Add branch code to all tools, which should not be too hard, as the routines already exist.
+* Migrate some of the tools or features into existing Koha release.
+
+XAMPP is at:
+http://sourceforge.net/projects/xampp/
+http://www.apachefriends.org/en/xampp.html
+
+
+
+
